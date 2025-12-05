@@ -2,6 +2,18 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+/* Fix wide-screen spacing & preserve 125% look */
+.body-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  transform-origin: top center;
+}
+
+@media (min-width: 1400px) {
+  body {
+    transform: scale(1.10);
+  }
+}
 
 :root {
   --background: oklch(1 0 0);
