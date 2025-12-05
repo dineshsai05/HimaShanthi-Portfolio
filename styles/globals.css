@@ -8,6 +8,14 @@
   margin: 0 auto;
   transform-origin: top center;
 }
+body {
+    zoom: 125%; /* For Chrome, Internet Explorer, Opera, etc. */
+    -moz-transform: scale(1.25); /* For Firefox */
+    -moz-transform-origin: top left; /* For Firefox to scale from top-left corner */
+    transform: scale(1.25); /* Standard property */
+    transform-origin: top left; /* Standard property to scale from top-left corner */
+    width: 80%; /* Adjust width to fit scaled content within viewport (100 / 125) */
+}
 
 @media (min-width: 1400px) {
   body {
