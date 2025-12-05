@@ -41,6 +41,9 @@ export default function RootLayout({
       <body className={`font-sans antialiased bg-white text-black`}>
         {children}
         <Analytics />
+        <div className="body-container">
+    {children}
+  </div>
       </body>
     </html>
   )
