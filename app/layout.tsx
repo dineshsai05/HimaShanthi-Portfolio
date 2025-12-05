@@ -11,24 +11,6 @@ export const metadata: Metadata = {
   title: "Hima Shanthi | Portfolio",
   description:
     "Mathematics & Psychology student - Finding certainty in numbers, wonder in people, and stories in everything.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 }
 
 export default function RootLayout({
@@ -41,9 +23,6 @@ export default function RootLayout({
       <body className={`font-sans antialiased bg-white text-black`}>
         {children}
         <Analytics />
-        <div className="body-container">
-    {children}
-  </div>
       </body>
     </html>
   )
